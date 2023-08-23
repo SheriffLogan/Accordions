@@ -1,199 +1,200 @@
 /* InnerAccordion.css */
 .inner-accordion {
-    width: 30%; /* Adjust as needed for the desired width */
-    margin: 0 1%; /* Proper gap between columns */
-    border-radius: 10px; /* Rounded edges */
-    overflow: hidden; /* Hide content overflow */
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px; /* Add margin at the bottom */
-    background-color: #9CC1E4;
-  }
-  
-  .collapsed .footer {
-    display: block; /* Show footer in collapsed state */
-  }
-  
-  .footer {
-    display: none; /* Hide footer by default */
-    padding: 10px;
-    border-top: 1px solid #ccc;
-  }
-  
-  .expanded .footer {
-     display: none;  /*Hide footer in expanded state */
-  }
-  
-  .inner-content {
-    padding: 10px;
-  }
-  
+  width: 30%; /* Adjust as needed for the desired width */
+  margin: 0 1%; /* Proper gap between columns */
+  border-radius: 10px; /* Rounded edges */
+  overflow: hidden; /* Hide content overflow */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Add margin at the bottom */
+  background-color: #F4F8FB;
+}
 
-  .accordion {
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: #fbfbfb;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 0 10px; /* Add padding to the left and right */
-    position: relative; /* Add position for absolute positioning of dropdowns */
-      overflow: hidden; /* Hide any overflow content */
-      transition: height 0.3s ease; /* Add a smooth transition */
-    
-  }
-  .collapsed {
-    height: 13vh;
-  }
-  
-  
-  
-  .top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .title-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .icon {
-    font-size: 24px;
-    margin-right: 8px;
-  }
-  
-  .title {
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .expand-icon {
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .orange {
-    color: #FF833B;
-  }
-  
-  .dropdowns {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .dropdown {
-    margin-right: 10px;
-    color: blue;
-    cursor: pointer;
-    background-color: white;
-    padding: 10px 15px;
-    border: 1px solid orange;
-  }
-  
-  .dropdown:last-child {
-    margin-right: 0;
-  }
-  
-  .menu {
-    font-size: 18px;
-    font-weight: bold;
-    color: blue;
-    background-color: white;
-    border: 1px solid orange;
-    padding: 10px;
-  }
-  
-  .content {
-    padding: 10px 20px;
-    background-color: #fff;
-  }
-  
-  .inner-accordions {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    justify-content: space-between;
+.collapsed .footer {
+  display: block; /* Show footer in collapsed state */
+}
 
-  }
+.footer {
+  display: none; /* Hide footer by default */
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.expanded .footer {
+   display: none;  /*Hide footer in expanded state */
+}
+
+.inner-content {
+  padding: 10px;
+}
+
+
+.accordion {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #FBFBFB;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0 10px; /* Add padding to the left and right */
+  position: relative; /* Add position for absolute positioning of dropdowns */
+    overflow: hidden; /* Hide any overflow content */
+    transition: height 0.3s ease; /* Add a smooth transition */
   
-  .inner-accordion-header {
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .divider {
-    border-top: 1px solid rgba(0, 0, 0, 0.2); /* Horizontal line */
-    margin: 10px 0;
-  }
-  
-  .section-divider,
+}
+.collapsed {
+  height: 13vh;
+}
+
+
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.expand-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.orange {
+  color: #FF833B;
+}
+
+.dropdowns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dropdown {
+  margin-right: 10px;
+  color: blue;
+  cursor: pointer;
+  background-color: white;
+  padding: 10px 15px;
+  border: 1px solid orange;
+}
+
+.dropdown:last-child {
+  margin-right: 0;
+}
+
+.menu {
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+  background-color: white;
+  border: 1px solid orange;
+  padding: 10px;
+}
+
+.content {
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.inner-accordions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-between;
+
+}
+
+.inner-accordion-header {
+  padding: 10px;
+  cursor: pointer;
+  color: #0B4B8A
+}
+
+.divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.2); /* Horizontal line */
+  margin: 10px 0;
+}
+
+.section-divider,
 .footer-divider {
-  width: 100%;
-  margin: 4px 0;
-  border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  opacity: 0.6;
+width: 100%;
+margin: 4px 0;
+border: none;
+border-top: 1px solid rgba(0, 0, 0, 0.2);
+opacity: 0.6;
 }
 .section {
-  display: flex;
-  flex-direction: column; /* Change flex direction to column */
-  margin-bottom: 10px;
+display: flex;
+flex-direction: column; /* Change flex direction to column */
+margin-bottom: 10px;
 }
 
 .section:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+padding-bottom: 10px;
+margin-bottom: 15px;
 }
 
 .text-section {
-  flex: 1;
+flex: 1;
 }
 .actions-section {
-  display: flex;
-  align-items: center;
+display: flex;
+align-items: center;
 }
 
 .delete-icon,
 .like-icon,
 .dislike-icon {
-  font-size: 20px;
-  cursor: pointer;
-  color: #333;
-  margin-right: 10px;
+font-size: 20px;
+cursor: pointer;
+color: #333;
+margin-right: 10px;
 }
 
 .delete-button {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
+background-color: #ff0000;
+color: #fff;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
 }
 .delete-title {
-  font-size: 14px;
-  color: #888;
-  margin-right: 10px;
+font-size: 14px;
+color: #888;
+margin-right: 10px;
 }
 
 .icon-section {
-  display: flex;
-  gap: 10px;
+display: flex;
+gap: 10px;
 }
 
 .footer-section {
-  display: flex;
-  justify-content: flex-end;
+display: flex;
+justify-content: flex-end;
 }
 
 .date-time.left {
-  font-size: 14px;
-  color: #888;
-  margin-left: 10px; /* Align to the left */
+font-size: 14px;
+color: #888;
+margin-left: 10px; /* Align to the left */
 }
 .spacer {
-  flex: 1;
+flex: 1;
 }
