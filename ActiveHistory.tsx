@@ -59,6 +59,7 @@ const ActiveHistory: React.FC = () => {
               style={{ transform: 'rotate(180deg)' }}
             />
 
+            
           </>
         ) : (
           <ExpandCircleDownSharpIcon className="expand-icon orange" onClick={toggleAccordion} />
@@ -69,32 +70,32 @@ const ActiveHistory: React.FC = () => {
           {/* Place your content here */}
           <div className="inner-accordions">
             <InnerAccordion
-              title="What is Hexaware's Pyroll Policy"
+              title="Accordion 1"
               expanded={expandedInnerIndex === 0}
               onToggle={() => handleInnerAccordionToggle(0)}
             />
             <InnerAccordion
-              title="Bus Route Availability"
+              title="Accordion 2"
               expanded={expandedInnerIndex === 1}
               onToggle={() => handleInnerAccordionToggle(1)}
             />
             <InnerAccordion
-              title="What is Flexi Component"
+              title="Accordion 3"
               expanded={expandedInnerIndex === 2}
               onToggle={() => handleInnerAccordionToggle(2)}
             />
             <InnerAccordion
-              title="Annual Appraisal document"
+              title="Accordion 4"
               expanded={expandedInnerIndex === 3}
               onToggle={() => handleInnerAccordionToggle(3)}
             />
             <InnerAccordion
-              title="Shift Allowance Document"
+              title="Accordion 5"
               expanded={expandedInnerIndex === 4}
               onToggle={() => handleInnerAccordionToggle(4)}
             />
             <InnerAccordion
-              title="Propel Procedures"
+              title="Accordion 6"
               expanded={expandedInnerIndex === 5}
               onToggle={() => handleInnerAccordionToggle(5)}
             />
