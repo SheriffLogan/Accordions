@@ -70,32 +70,32 @@ const ActiveHistory: React.FC = () => {
           {/* Place your content here */}
           <div className="inner-accordions">
             <InnerAccordion
-              title="Accordion 1"
+              title="What is Hexaware's Payroll policy"
               expanded={expandedInnerIndex === 0}
               onToggle={() => handleInnerAccordionToggle(0)}
             />
             <InnerAccordion
-              title="Accordion 2"
+              title="Bus Route Availability"
               expanded={expandedInnerIndex === 1}
               onToggle={() => handleInnerAccordionToggle(1)}
             />
             <InnerAccordion
-              title="Accordion 3"
+              title="What is flexi component"
               expanded={expandedInnerIndex === 2}
               onToggle={() => handleInnerAccordionToggle(2)}
             />
             <InnerAccordion
-              title="Accordion 4"
+              title="Shift Allowance document"
               expanded={expandedInnerIndex === 3}
               onToggle={() => handleInnerAccordionToggle(3)}
             />
             <InnerAccordion
-              title="Accordion 5"
+              title="Annual Appraisal document"
               expanded={expandedInnerIndex === 4}
               onToggle={() => handleInnerAccordionToggle(4)}
             />
             <InnerAccordion
-              title="Accordion 6"
+              title="Propel Procedures"
               expanded={expandedInnerIndex === 5}
               onToggle={() => handleInnerAccordionToggle(5)}
             />
