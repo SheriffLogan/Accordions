@@ -1,200 +1,225 @@
 /* InnerAccordion.css */
 .inner-accordion {
-  width: 30%; /* Adjust as needed for the desired width */
-  margin: 0 1%; /* Proper gap between columns */
-  border-radius: 10px; /* Rounded edges */
-  overflow: hidden; /* Hide content overflow */
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px; /* Add margin at the bottom */
-  background-color: #F4F8FB;
+    width: 100%; /* Adjust as needed for the desired width */
+    margin: 0 1%; /* Proper gap between columns */
+    border-radius: 10px; /* Rounded edges */
+    overflow: hidden; /* Hide content overflow */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Add margin at the bottom */
+    /* background-color: #f4f8fb; */
 }
 
-.collapsed .footer {
-  display: block; /* Show footer in collapsed state */
-}
+.inner-accordion-content {
+    width: 100%; /* Make sure the content section takes up the full width */
+    padding: 10px; /* Add padding to the content for spacing */
 
-.footer {
-  display: none; /* Hide footer by default */
-  padding: 10px;
-  border-top: 1px solid #ccc;
+    /* Define maximum width for the content section */
+    max-width: 800px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the content horizontally */
 }
-
-.expanded .footer {
-   display: none;  /*Hide footer in expanded state */
-}
-
-.inner-content {
-  padding: 10px;
-}
-
 
 .accordion {
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: #FBFBFB;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 0 10px; /* Add padding to the left and right */
-  position: relative; /* Add position for absolute positioning of dropdowns */
+    margin-left: 10%;
+    margin-right: 10%;
+    /* background-color: #fbfbfb; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0 10px; /* Add padding to the left and right */
+    position: relative; /* Add position for absolute positioning of dropdowns */
     overflow: hidden; /* Hide any overflow content */
     transition: height 0.3s ease; /* Add a smooth transition */
-  
 }
 .collapsed {
-  height: 13vh;
+    height: 13vh;
 }
 
-
-
 .top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
 }
 
 .title-section {
-  display: flex;
-  align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    /* margin-right: 200px; */
+}
+
+.title-section-inner {
+    flex: 1; /* Allow title to take as much space as possible */
+    margin-right: 200px;
+    color: #004385;
+    font-weight: bold;
 }
 
 .icon {
-  font-size: 24px;
-  margin-right: 8px;
+    font-size: 24px;
+    margin-left: 8px;
+    margin-right: 5px;
 }
 
 .title {
-  font-weight: bold;
-  font-size: 18px;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .expand-icon {
-  font-size: 24px;
-  cursor: pointer;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 .orange {
-  color: #FF833B;
-}
-
-.dropdowns {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.dropdown {
-  margin-right: 10px;
-  color: blue;
-  cursor: pointer;
-  background-color: white;
-  padding: 10px 15px;
-  border: 1px solid orange;
-}
-
-.dropdown:last-child {
-  margin-right: 0;
-}
-
-.menu {
-  font-size: 18px;
-  font-weight: bold;
-  color: blue;
-  background-color: white;
-  border: 1px solid orange;
-  padding: 10px;
+    color: #ff833b;
 }
 
 .content {
-  padding: 10px 20px;
-  background-color: #fff;
-}
-
-.inner-accordions {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  justify-content: space-between;
-
+    padding: 10px 20px;
 }
 
 .inner-accordion-header {
-  padding: 10px;
-  cursor: pointer;
-  color: #0B4B8A
+    padding: 10px;
+    cursor: pointer;
+    color: #0b4b8a;
+    /* background-color: #f4f8fb; */
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+/* Style for the top section */
+.header-top {
+    display: flex;
+    justify-content: space-between; /* Place title and icons in the same line */
+    width: 100%; /* Full width */
+    margin-bottom: 5px; /* Add some spacing between sections */
+}
+
+.header-bottom {
+    width: 100%;
+    text-align: left;
 }
 
 .divider {
-  border-top: 1px solid rgba(0, 0, 0, 0.2); /* Horizontal line */
-  margin: 10px 0;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2); /* Horizontal line */
+    margin: 5px 0;
 }
 
 .section-divider,
 .footer-divider {
-width: 100%;
-margin: 4px 0;
-border: none;
-border-top: 1px solid rgba(0, 0, 0, 0.2);
-opacity: 0.6;
+    width: 100%;
+    margin: 4px 0;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 0.6;
 }
 .section {
-display: flex;
-flex-direction: column; /* Change flex direction to column */
-margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    margin-bottom: 10px;
 }
 
 .section:not(:last-child) {
-border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-padding-bottom: 10px;
-margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .text-section {
-flex: 1;
-}
-.actions-section {
-display: flex;
-align-items: center;
+    flex: 1;
+    font-size: 16px; /* Adjust font size as needed */
+    margin-top: 5px;
 }
 
-.delete-icon,
-.like-icon,
+.actions-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-top: 5px;
+}
+
+.delete-icon {
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #ff4c37;
+    border-radius: 10px;
+}
+
+.like-icon {
+    font-size: 15px;
+    cursor: pointer;
+    color: #648ec5;
+    margin-left: 65px;
+}
+
 .dislike-icon {
-font-size: 20px;
-cursor: pointer;
-color: #333;
-margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #e98787;
+    margin-left: 1px;
 }
 
 .delete-button {
-background-color: #ff0000;
-color: #fff;
-border: none;
-padding: 5px 10px;
-cursor: pointer;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 .delete-title {
-font-size: 14px;
-color: #888;
-margin-right: 10px;
+    font-size: 14px;
+    color: #888;
 }
 
 .icon-section {
-display: flex;
-gap: 10px;
+    display: flex;
+    gap: 8px;
 }
 
 .footer-section {
-display: flex;
-justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .date-time.left {
-font-size: 14px;
-color: #888;
-margin-left: 10px; /* Align to the left */
+    font-size: 14px;
+    color: #343435;
+    margin-right: 153px; /* Align to the left */
+}
+
+.date-time {
+    font-size: 13px;
 }
 .spacer {
-flex: 1;
+    flex: 1;
+}
+
+.custom-flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items onto new rows when they don't fit in a row */
+    justify-content: space-between; /* Distribute items evenly in a row with space between */
+    margin-top: 1rem; /* Margin on top */
+    margin-bottom: 1rem; /* Margin on bottom */
+}
+
+.custom-flex-item {
+    flex-basis: calc(33.333% - 1rem); /* Width of each item (1/3) minus margin */
+    margin-bottom: 1rem; /* Margin between items */
 }
