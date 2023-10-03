@@ -21,7 +21,9 @@ const InnerAccordion: React.FC<InnerAccordionProps> = ({ title, description, dat
   };
 
   return (
-    <Accordion className={`inner-accordion ${expanded ? 'expanded' : 'collapsed'}`}>
+    <Accordion className={`inner-accordion ${expanded ? 'expanded' : 'collapsed'}`}
+      expanded={expanded}
+    >
       <AccordionSummary className="inner-accordion-header" expandIcon={null} onClick={toggleAccordion} style={{ backgroundColor: '#f4f8fb' }}>
         <div className="header-content" style={{ height: expanded ? '5vh' : 'auto'}}>
           <div className="header-top">
