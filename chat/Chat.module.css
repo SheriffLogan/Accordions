@@ -1,0 +1,161 @@
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        margin-top: 20%;
+    }
+}
+
+.chatRoot {
+    flex: 1;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.chatContainer1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: "transparent";
+}
+.chatContainer2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    justify-content: flex-end;
+    height: 80vh;
+}
+
+.chatEmptyState {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 1024px;
+    padding-top: 60px;
+    margin-top: -3%;
+}
+
+.chatEmptyStateTitle {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.chatEmptyStateSubtitle {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-height: 780px) {
+    .chatEmptyState {
+        padding-top: 0;
+    }
+
+    .chatEmptyStateTitle {
+        font-size: 3rem;
+        margin-bottom: 0px;
+    }
+}
+
+.chatMessageStream {
+    flex-grow: 1;
+    max-height: 50vh;
+    max-width: 1028px;
+    width: 100%;
+    overflow-y: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for each conversation item */
+.chatMessageItem {
+    margin-bottom: 20px;
+    display: flex;
+}
+/* Styles for the user chat message */
+.userChatMessage {
+    background-color: #f0f0f0;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+    max-width: 80%; /* Added max-width to limit user message width */
+}
+
+.chatMessageGpt {
+    margin-bottom: 20px;
+    max-width: 80%;
+    display: flex;
+    min-width: 500px;
+}
+
+.chatMessageGptMinWidth {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.chatInput {
+    bottom: 0;
+    flex: 0 0 100px;
+    padding-top: 48px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 93%;
+    max-width: 1028px;
+    background: #ffffff;
+    border: solid 1px gray;
+    border-radius: 25px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.chatAnalysisPanel {
+    flex: 1;
+    /* overflow-y: auto; */
+    max-height: 80vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* overflow: scroll; */
+    background: #f2f2f2;
+}
+
+.chatSettingsSeparator {
+    margin-top: 15px;
+}
+
+.loadingLogo {
+    font-size: 28px;
+}
+
+.commandsContainer {
+    display: flex;
+    align-self: flex-end;
+}
+
+.commandButton {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px dashed #c83700;
+    border-radius: 30px;
+    padding: 8px;
+    cursor: pointer;
+}
